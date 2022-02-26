@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/public/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+
+
+     function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var subject = $('#Subject').val();
+      var message = $('#Message').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+        Host : "smtp.gmail.com",
+    Username : "kingsaks02@gmail.com",
+    Password : "Rakshaputra18z",
+				To: 'axxatagrawal@gmail.com',
+				From: "kingsaks02@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+
+
+		}
+
+
+  window.addEventListener('scroll',()=>{
+    console.log("Scrolled");
+    const scrolld = window.scrollY;
+    const add = document.get 
+    console.log(scrolld);
+    if(scrolld>82){
+
+    }
+})
+
+var typed = new Typed(".typing",{
+    strings: ["Web Developer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+console.log("hello world i m testing");
+
+var typed = new Typed(".typin",{
+    strings: ["a Web Developer", "a Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+</script>

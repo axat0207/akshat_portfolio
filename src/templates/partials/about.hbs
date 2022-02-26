@@ -1,0 +1,56 @@
+
+<!-- ABOUT ME PAGE -->
+ <section id="about" class="bg-white h-screen pt-11">
+
+     
+   <div>
+     <div class="text-4xl mt-12 text-center font-bold">About Me</div>
+     <div class="text-center text-red-500 mt-1 text-xl"><span class="text-black">----</span>who i am<span class="text-black">----</span></div>
+     <div class="flex mt-8">
+       <img src="profile-1.jpeg" class="h-96 ml-32 mr-7 rounded-md" alt="">
+       <div class="">
+         <span class="font-bold text-2xl">I'm Akshat and I'm a</span>  <span  class="typin font-bold text-2xl text-red-600"></span> 
+         <div class="mr-12  text-md leading-7 tracking-wide mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, 
+
+
+        </div>
+        <button class="py-5 mt-7 px-12 bg-red-600 hover:bg-white hover:text-red-600 rounded-md shadow-2xl text-white hover:text-red hover:border-solid hover:border-2 hover:border-red-600 hover:scale-105  duration-500 transition-all ">Download CV</button>
+       </div>
+
+     </div>
+   </div>
+ </section>
+
+ <script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+        
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+var typed = new Typed(".typing",{
+    strings: ["Web Developer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+console.log("hello world i m testing");
+
+var typed = new Typed(".typin",{
+    strings: ["a Web Developer", "a Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+ </script>
